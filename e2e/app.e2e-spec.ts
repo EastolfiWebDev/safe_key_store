@@ -1,14 +1,14 @@
-import { OsfpovPage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('osfpov App', () => {
-    let page: OsfpovPage;
+describe('crypto App', () => {
+  let page: AppPage;
 
-    beforeEach(() => {
-        page = new OsfpovPage();
-    });
+  beforeEach(() => {
+    page = new AppPage();
+  });
 
-    it('should display message saying App Web!', () => {
-        page.navigateTo();
-        expect(page.getParagraphText()).toEqual('App Web!');
-    });
+  it('should display welcome message', () => {
+    page.navigateTo();
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
+  });
 });
